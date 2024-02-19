@@ -1,0 +1,11 @@
+info,value
+JVM,"19.0.1; Oracle Corporation; mixed mode, sharing; 64-bit"
+OS,Windows 11; 10.0; amd64
+CPU cores,8
+max. Memory,4026.0MB (4221566976B)
+MATSim-Build,rf110e47b96aac32abbf05e9f00f0d036b33fcdaf (2024-01-10 21:36:08)
+Command,org.matsim.codeexamples.extensions.freight.RunFreightFoodRetailingBerlinExample
+Start,2024-02-08 11:45:58
+End,2024-02-08 11:46:10
+Duration,12 seconds
+MATSim iterations,0
