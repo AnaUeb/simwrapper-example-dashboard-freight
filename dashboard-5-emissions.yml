@@ -9,7 +9,7 @@ layout:
     - type: "links"
       title: "Simulated emissions in the study area"
       height: 10
-      csvFile: "emissions/Emissions_PerLink.csv"
+      csvFile: "output/analysis/1_emissions/Emissions_PerLink.csv"
       geojsonFile: "network.geojson.gz"
       center: [13.3286309, 52.5221844]
       zoom: 11

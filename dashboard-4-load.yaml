@@ -12,7 +12,7 @@ layout:
       title: Max. capacity
       description: by vehicle type
       datasets:
-        dataset: "data/analysis/Capacity_summary.csv"
+        dataset: "output/analysis/0_general/Capacity_summary.csv"
       traces:
         - type: "bar"
           y: $dataset.maxCapacity 
@@ -36,7 +36,7 @@ layout:
       title: Max. used capacity in percent
       description: by vehicle type
       datasets:
-        dataset: "data/analysis/Load_perVehicle.csv"
+        dataset: "output/analysis/0_general/Load_perVehicle.csv"
       traces:
         - type: "violin"
           y: $dataset.usedCapacity[%] 
@@ -57,7 +57,7 @@ layout:
   csv:
     - type: "csv"
       title: Load_perVehicle.csv
-      dataset: data/analysis/Load_perVehicle.csv
+      dataset: output/analysis/0_general/Load_perVehicle.csv
       enableFilter: true
   load:
     - type: "bar"
@@ -66,7 +66,7 @@ layout:
       height: 10
       width: 2
       props:
-        dataset: "data/analysis/Load_perVehicle.csv"
+        dataset: "output/analysis/0_general/Load_perVehicle.csv"
         x: "vehicleId"
         columns: ["maxLoad","capacity"]
         stacked: false

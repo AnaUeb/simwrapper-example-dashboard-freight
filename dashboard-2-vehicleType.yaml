@@ -9,7 +9,7 @@ layout:
     - type: csv
       title: Available vehicle types
       width: 1.0
-      dataset: data/analysis/TimeDistance_perVehicleType.csv
+      dataset: output/analysis/0_general/TimeDistance_perVehicleType.csv
       showAllRows: true
       hideHeader: true
       show: ["vehicleTypeId"]
@@ -17,7 +17,7 @@ layout:
       height: 3
     - type: "tile"
       width: 2
-      dataset: data/analysis/Load_summary.csv
+      dataset: output/analysis/0_general/Load_summary.csv
       height: 3
   parameters:
     - type: plotly
@@ -25,7 +25,7 @@ layout:
       height: 5
       width: 1
       datasets:
-        dataset: "data/analysis/TimeDistance_perVehicleType.csv"
+        dataset: "output/analysis/0_general/TimeDistance_perVehicleType.csv"
       traces:
         - type: "bar"
           x: $dataset.vehicleTypeId                    
@@ -52,7 +52,7 @@ layout:
       height: 5
       width: 1
       datasets:
-        dataset: "data/analysis/TimeDistance_perVehicle.csv"
+        dataset: "output/analysis/0_general/TimeDistance_perVehicle.csv"
         aggregate:
           func: SUM
           groupBy:
@@ -74,7 +74,7 @@ layout:
       height: 5
       width: 1
       props:
-        dataset: "data/analysis/TimeDistance_perVehicleType.csv"
+        dataset: "output/analysis/0_general/TimeDistance_perVehicleType.csv"
         x: "vehicleTypeId"
         stacked: false
         columns: ["SumOfTourDuration[s]"]
@@ -86,7 +86,7 @@ layout:
       height: 5
       width: 1
       props:
-        dataset: "data/analysis/TimeDistance_perVehicleType.csv"
+        dataset: "output/analysis/0_general/TimeDistance_perVehicleType.csv"
         x: "vehicleTypeId"
         stacked: false
         columns: ["SumOfTravelDistances[m]"]

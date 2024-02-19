@@ -10,7 +10,7 @@ layout:
       title: Distance per vehicle
       description: for all vehicle types
       datasets:
-        dataset: "data/analysis/TimeDistance_perVehicle.csv"
+        dataset: "output/analysis/0_general/TimeDistance_perVehicle.csv"
       traces:
         - type: "violin"
           y: $dataset.travelDistance[m] 
@@ -34,7 +34,7 @@ layout:
       title: Distance per vehicle
       description: by vehicle type
       datasets:
-        dataset: "data/analysis/TimeDistance_perVehicle.csv"
+        dataset: "output/analysis/0_general/TimeDistance_perVehicle.csv"
       traces:
         - type: "violin"
           y: $dataset.travelDistance[m] 
@@ -59,7 +59,7 @@ layout:
       title: Tour duration per Vehicle      
       description: for all vehicle types
       datasets:
-        dataset: "data/analysis/TimeDistance_perVehicle.csv"
+        dataset: "output/analysis/0_general/TimeDistance_perVehicle.csv"
       traces:
         - type: "violin"
           y: $dataset.tourDuration[s] 
@@ -83,7 +83,7 @@ layout:
       title: Tour duration per Vehicle      
       description: by vehicle type
       datasets:
-        dataset: "data/analysis/TimeDistance_perVehicle.csv"
+        dataset: "output/analysis/0_general/TimeDistance_perVehicle.csv"
       traces:
         - type: "violin"
           y: $dataset.tourDuration[s] 
@@ -108,7 +108,7 @@ layout:
       title: Total costs per Vehicle
       description: for all vehicle types
       datasets:
-        dataset: "data/analysis/TimeDistance_perVehicle.csv"
+        dataset: "output/analysis/0_general/TimeDistance_perVehicle.csv"
       traces:
         - type: "violin"
           y: $dataset.totalCosts[EUR] 
@@ -132,7 +132,7 @@ layout:
       title: Total costs per Vehicle
       description: by vehicle type
       datasets:
-        dataset: "data/analysis/TimeDistance_perVehicle.csv"
+        dataset: "output/analysis/0_general/TimeDistance_perVehicle.csv"
       traces:
         - type: "violin"
           y: $dataset.totalCosts[EUR] 
@@ -153,5 +153,5 @@ layout:
   csv:
     - type: "csv"
       title: TimeDistance_perVehicle.csv
-      dataset: data/analysis/TimeDistance_perVehicle.csv
+      dataset: output/analysis/0_general/TimeDistance_perVehicle.csv
       enableFilter: true
