@@ -1,0 +1,5 @@
+vehicleTypeId;maxCapacity
+heavy26t;24.0
+medium18t;16.0
+heavy26t_frozen;160.0
+light8t_frozen;70.0
