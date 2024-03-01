@@ -10,7 +10,7 @@ layout:
       description: "The data only refers to the MATSim simulation itself, not the tour planning by jsprit."
       title: Run Info
       width: 1.0
-      dataset: output/analysis/0_general/run_info.csv
+      dataset: analysis/run_info.csv
       showAllRows: true
       height: 8
       hideHeader: true
@@ -18,21 +18,21 @@ layout:
     - title: "MATSim carrier viewer"
       type: carriers
       width: 2
-      network: "output/output_network.json.gz"
-      carriers: "output/output_carriers.xml.gz"
+      network: "output_network.json.gz"
+      carriers: "output_carriers.xml.gz"
       center: [13.391, 52.515]
       height: 8
   carriers:
     - title: "General stats"
       type: "tile"
       height: 0.1
-      dataset: output/analysis/0_general/General_stats.csv
+      dataset: analysis/General_summary.csv
   tournumbers:
     - type: "plotly"
       title: "Number of tours"
       description: "by carrier"
       datasets:
-        dataset: "output/analysis/0_general/Carrier_stats.csv"
+        dataset: "analysis/Carrier_summary.csv"
       traces:
         - type: bar
           y: $dataset.carrierId
@@ -54,7 +54,7 @@ layout:
       description: "by carrier"
       width: 1
       datasets:
-        dataset: "output/analysis/0_general/Carrier_stats.csv"
+        dataset: "analysis/Carrier_summary.csv"
       traces:
         - type: bar
           y: $dataset.carrierId
@@ -76,7 +76,7 @@ layout:
       description: "by carrier"
       width: 1
       datasets:
-        dataset: "output/analysis/0_general/Carrier_stats.csv"
+        dataset: "analysis/Carrier_summary.csv"
       traces:
         - type: bar
           y: $dataset.carrierId
@@ -98,7 +98,7 @@ layout:
       description: "by carrier"
       width: 1
       datasets:
-        dataset: "output/analysis/0_general/Carrier_stats.csv"
+        dataset: "analysis/Carrier_summary.csv"
       traces:
         - type: bar
           y: $dataset.carrierId
@@ -119,7 +119,7 @@ layout:
       description: "by carrier"
       width: 1
       datasets:
-        dataset: "output/analysis/0_general/Carrier_stats.csv"
+        dataset: "analysis/Carrier_summary.csv"
       traces:
         - type: bar
           y: $dataset.carrierId
